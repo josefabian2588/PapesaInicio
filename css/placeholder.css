@@ -1,0 +1,13 @@
+.placeholder{color:#A2A2A2;}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:#A2A2A2;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#A2A2A2;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#A2A2A2;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#A2A2A2;
+}
