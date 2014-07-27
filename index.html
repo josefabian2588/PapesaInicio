@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Empresa Papeles Seleccionados">
     <meta name="author" content="J.Fabian Araya">
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
@@ -23,8 +23,7 @@
 
      <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet" type="text/css">
-    <link href="css/placeholder.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/normalize.css">
+   
 
 
 
@@ -86,7 +85,7 @@
                 <div class="col-lg-12 text-center">
                 </br>
                     <div class="clearfix"></div> 
-                    <h1 class="section-title">Máquinas y suministros para tu imaginación</h1>
+                    <h1 class="section-title">Visite nuestras tiendas en línea</h1>
                     <br><br><br>
                      <div class="clearfix"></div>   
                 </div>
@@ -226,7 +225,7 @@ La gran gama y variedad de productos, sus excelentes precios y sobre todo su tra
                 </div>
             </div>
 
-            <div class="row">
+            <div id="contact_form" class="row">
                 <div class="col-md-offset-2 col-md-8 text-center bigger-text">
                     <p>Puede enviar un mensaje usando el siguiente formulario de contacto.</p>
                 </div>
@@ -236,24 +235,34 @@ La gran gama y variedad de productos, sus excelentes precios y sobre todo su tra
                     
                 </div> <!-- /.col-md-6 -->
                 <div class="col-md-6 col-sm-6">
-                    <div class="row contact-form">
+
+                 <form role="form" id="feedbackForm">   
+                     <div class="form-group has-feedback">
+
+
                         <fieldset class="col-md-6 col-sm-6">
-                            <input id="name" type="text" name="name" placeholder="Nombre">
+                            <label class="control-label" for="name">Nombre</label>
+                            <input id="name" class="form-control input-sm" type="text" name="name" placeholder="Escriba su nombre">
                         </fieldset>
                         <fieldset class="col-md-6 col-sm-6">
-                            <input type="email" name="email" id="email" placeholder="Correo">
+                            <label class="control-label" for="email">Correo</label>
+                            <input type="email" class="form-control input-sm" name="email" id="email" placeholder="Escriba su Correo">
                         </fieldset>
                         <fieldset class="col-md-12">
-                            <input type="text" name="subject" id="subject" placeholder="Asunto">
+                            <label class="control-label" for="subject">Asunto</label>
+                            <input type="text" class="form-control input-sm" name="subject" id="subject" placeholder="Escriba un Asunto">
                         </fieldset>
                         <fieldset class="col-md-12">
-                            <textarea name="comments" id="comments" placeholder="Mensaje"></textarea>
+                            <label class="control-label" for="comments">Mensaje</label>
+                            <textarea name="comments" class="form-control input-sm" id="comments" placeholder="Escriba su Mensaje"></textarea>
                         </fieldset>
                         <fieldset class="col-md-12">
                             <input type="submit" name="send" value="Enviar Mensaje" id="submit" class="btn btn-lg btn-success">
                         </fieldset>
 
                     </div> <!-- /.contact-form -->
+
+                </form>
                 </div> <!-- /.col-md-6 -->
 
         </div>
@@ -331,7 +340,8 @@ La gran gama y variedad de productos, sus excelentes precios y sobre todo su tra
 
     <!-- Custom Theme JavaScript -->
     <script src="js/scrolling-nav.js"></script>
-    <script src="js/placeholder.js"></script>
+    <script src="js/contact-form.js"></script>
+   
 
 </body>
 

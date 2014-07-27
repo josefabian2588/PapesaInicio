@@ -17,7 +17,7 @@ body {
 
 @media(min-width:767px) {
     .navbar {
-        padding: 20px 0;
+        padding: 12px 0;  /* Tamaño que se expande el menu de nav */
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -89,7 +89,7 @@ h6 {
 
 .section-title:before {
   content: '';
-  width: 180px;
+  width: 100px;
   height: 3px;
   background: url(../images/t-left.png) no-repeat center;
   margin-bottom: 10px;
@@ -99,7 +99,7 @@ h6 {
 }
 .section-title:after {
   content: '';
-  width: 180px;
+  width: 100px;
   height: 3px;
   background: url(../images/t-right.png) no-repeat center;
   margin-bottom: 10px;
@@ -121,7 +121,7 @@ h6 {
 
 
 section {
-    padding: 100px 0;
+    padding: 70px 0;
 }
 
 section h2 {
@@ -183,7 +183,7 @@ section.fondoClaro {
 }
 
 input, textarea {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   background-color: #f6f7f8;
   padding: 14px;
   font-size: 14px;
