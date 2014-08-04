@@ -128,6 +128,31 @@
     text-align:justify;
     padding:10px 0px;
   }
+
+  .datoscentrados p{
+   text-align:center;
+
+  }
+
+  .datoscentrados {
+    margin-top: 15px;
+  
+  }
+  .datoscentrados h3{
+   text-align:center;
+
+  }
+
+   .datoscentrados .list-inline{
+   text-align:center;
+padding-left: 0;
+margin-left: -5px;
+list-style: none;
+
+  }
+
+
+
   .feature-box p{
     text-align:center;
   }
@@ -404,7 +429,6 @@
     font-weight: 400;
     line-height: 24px;
     }
-
 
 
 

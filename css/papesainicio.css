@@ -9,7 +9,7 @@ html, body {
 
 body {
   font: 13px/21px "Open Sans", Arial, sans-serif;
-  color: #838383;
+  
   background: url(../images/bg.gif);/*#f5f5f5 *//*f1f7fe*/;
 }
 
@@ -179,7 +179,7 @@ h6 {
   font-size: 16px;
   line-height: 28px;
   font-weight: 500;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .section-heading {
@@ -189,7 +189,8 @@ h6 {
 
 
 section {
-    padding: 70px 0;
+    padding: 50px 0;
+   
 }
 
 section h2 {
@@ -475,6 +476,10 @@ footer .footer-below {
 }
 
 
+
+
+
+
 /* ==========================================================================
     Promotion Styling
    ========================================================================== */
@@ -507,6 +512,13 @@ footer .footer-below {
 }
 
 
+.form-group {
+margin-bottom: 0px;
+}
+
+
+
+
 
 /* ==========================================================================
    Browse Happy prompt
@@ -526,3 +538,4 @@ footer .footer-below {
         color: #FFF;
     }
 }
+
