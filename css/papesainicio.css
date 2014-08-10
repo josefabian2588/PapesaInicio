@@ -100,7 +100,7 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 a {
-  color: #26b864;
+  color: #368078;
   text-decoration: none !important;
   -webkit-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
@@ -109,7 +109,7 @@ a {
   transition: all 200ms ease-in;
 }
 a:hover {
-  color: #f5a200;
+  color: #dfe3ee;
 }
 
 h1, h2, h3, h4, h5, h6 {
