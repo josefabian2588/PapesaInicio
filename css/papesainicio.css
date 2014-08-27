@@ -59,7 +59,9 @@ body {
 }
 
 .navbar-inverse {     /*  Color de la barra  turquesa /negro  */
-  background-color: #368078;
+ /* background-color: #368078;*/
+  background-color: transparent;
+  background-image: url("../images/Barra_navegacion.png");
   border-color: #2b6660;
 }
 

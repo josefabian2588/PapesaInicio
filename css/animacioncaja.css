@@ -242,7 +242,8 @@ list-style: none;
         font-size:70px;
       }
       
-      #header-section{
+      #header-
+      {
         position:relative;
         overflow:hidden;
       }
@@ -344,20 +345,23 @@ list-style: none;
   }
     
      .panel{
-        display:inline-block;
-        width:100%;
-        min-width:100%;
-        min-height:100px;
-        z-index:3;
-        margin:0px 0px 0px;
-        color:#1abc9c;
-        background: url(../images/bg.gif);/*#f5f5f5 *//*f1f7fe*/;
-        padding:60px 0px;
+      margin-top:0px; 
+    margin-bottom:-50px; 
+    padding-bottom:10px;
+    padding-top:10px;
+    padding-right:0px;
+    padding-left:0px;
+    border:0px;
+    width:100%;
+    max-width:100%;
+    
 
       }
       
       .panel.first{
-        margin-top:-30px; 
+        margin-top:-50px; 
+        background: url(../images/NuestrosServiciobarra.png);/*#f5f5f5 *//*f1f7fe*/; 
+
       }
       
       .panel.nobg{
