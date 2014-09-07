@@ -28,6 +28,7 @@ body {
         /* Customize the look and feel of the collapsed top nav here */
         padding: 0;
 
+
     }
 }
 
@@ -60,9 +61,10 @@ body {
 
 .navbar-inverse {     /*  Color de la barra  turquesa /negro  */
  /* background-color: #368078;*/
-  background-color: transparent;
+  
   background-image: url("../images/Barra_navegacion.png");
-  border-color: #2b6660;
+
+  
 }
 
 
@@ -73,17 +75,17 @@ body {
 .navbar-inverse .navbar-brand:hover,   
 .navbar-inverse .navbar-brand:focus {    /* color de la palabra Tienda al tener focus */
   color: #0f0f0f;
-  background-color: transparent;
+
 }
 
 
-.navbar-inverse .navbar-nav > li > a {   /* color de los titulos en la barra   */
+.navbar-inverse .navbar-nav > li > a {   /* color de los nombres titulos en la barra   */
   color: #fff ;
 }
 .navbar-inverse .navbar-nav > li > a:hover, 
-.navbar-inverse .navbar-nav > li > a:focus {  /*color de los titulos en la barra  al tener focus */
+.navbar-inverse .navbar-nav > li > a:focus {  /*color de los  titulos en la barra  al tener focus */
   color: #0f0f0f;
-  background-color: transparent;
+  
 }
 
 
@@ -206,7 +208,9 @@ section.success {
 
 section.fondoOscuro {
     color: #fff;
-    background: #2c3e50;
+   
+   background: url(../images/Imagen_Galeria.png); top center no-repeat;
+  background-size:100% auto;
 }
 
 section.fondoMisionVision {
