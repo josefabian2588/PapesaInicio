@@ -127,7 +127,14 @@
   p{
     text-align:justify;
     padding:10px 0px;
+
   }
+  .jumbotron p {
+margin-bottom: 15px;
+font-size: 17px;
+font-weight: 20;
+}
+
 
   .datoscentrados p{
    text-align:center;
