@@ -1,0 +1,109 @@
+body {
+
+  
+  background: url(../img/bg.gif);/*#f5f5f5 *//*f1f7fe*/;
+}
+
+
+/*  BARRA SUPERIOR IMAGEN DE COLORES*/
+.navbar-default {
+   background-image: url("../img/Barra_navegacion.png");
+}
+
+
+/*  COLOR PALABRA DE MARCA TIENDA*/
+.navbar-default .navbar-brand {
+  color: #fff ;
+}
+
+/* color de la palabra Tienda al tener focus */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #878787;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #878787;
+  background-color: transparent;
+}
+
+/* Titulo principal */
+h1.section-title{
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+
+/* Titulo varios */
+h1.section-titleVarios{
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  
+   text-transform: uppercase;
+    font-size: 3.0em;
+    font-weight: 100;
+font-family: 'Love Ya Like A Sister', cursive;
+}
+
+/* tamaño maximo para nosotros fondo foto */
+.full-width{
+	width: 100%;
+	background: url(../img/Imagen_Galeria.jpg) top center no-repeat;/*#f5f5f5 *//*f1f7fe*/;
+   background-repeat: repeat-x;
+	padding: 40px;
+
+}
+
+
+.thumbnail {
+
+  margin-bottom: 50px;
+
+}
+
+
+.jumbotron{
+    background: rgba(250,250,250, 0.90);
+	padding-top: 10px;
+	
+}
+
+#fbico {
+    color: #3B5998;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 1.5em;
+}
+
+
+
+
+
+@media(max-width: 1024px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
+
+
+
+@media(max-width: 768px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+@media(max-width: 480px) {
+  h1 {
+    font-size: 1em;
+  }
+}
+
