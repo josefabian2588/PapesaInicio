@@ -38,35 +38,40 @@
    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
    <link href="css/animacioncaja.css" rel="stylesheet">
-
+	<!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
 	
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-				<div class="navbar-header">
-					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+
+				<div class="navbar-header page-scroll">
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 					  <span class="sr-only">Toggle navigation</span>
 					  <span class="icon-bar"></span>
 					  <span class="icon-bar"></span>
 					  <span class="icon-bar"></span>
 				
 					</button> 
-					<a class="navbar-brand" href="#page-top">TIENDAS</a>
+					<a class="navbar-brand page-scroll" href="#page-top">TIENDAS</a>
 				</div>
 				
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li class="page-scroll">
-                        <a href="#about">Nosotros</a>
-                    </li>
-                    <li class="page-scroll">
-                          <a href="#features">Servicios</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contactenos</a>
-                    </li>
+						<li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                        </li>
+						<li>
+                        <a class="page-scroll" href="#about">Nosotros</a>
+                        </li>
+                        <li>
+                        <a class="page-scroll" href="#services">Servicios</a>
+                        </li>
+                        <li >
+                        <a class="page-scroll" href="#contact">Contactenos</a>
+                       </li>
 
 
 
@@ -109,7 +114,7 @@
 
 
 
-<section id="intro" >			
+<section id="intro" class="intro-section" >			
 <div class="container">
 	<div class="row clearfix">
 		<div class="col-md-12 column">
@@ -187,7 +192,7 @@
 
 
 
-<section id="about" >
+<section id="about" class="about-section" >	
 
 <div class="full-width" class="img-responsive">
 <div class="container">
@@ -254,7 +259,7 @@
 
 
 
-<section  id="features" >
+<section  id="services" class="services-section" >	
 	<div class="container">
 
 	<div class="row clearfix">
@@ -331,24 +336,160 @@
 
 
 
-<section id="contact">
-<div class="container">
+
+
+
+
+
+
+
+
+
+<section id="contact" class="contact-section">
+
+<div  class="container">
 
 
 	<div class="row clearfix">
 		<div class="col-md-12 column">
 			<div class="page-header">
-				<h1>
-					Example page header <small>Subtext for header</small>
+				<h1 class="section-titleVarios">
+					CONTACTENOS
 				</h1>
 			</div>
-		</div>
+
+	</div>
+	</div>
+
+<div id="contact_form" class="row">
+
+	<div class="col-md-6 col-sm-6">
+      <div id="map">
+     </div>
+	 </div> 
+
+	
+                <div class="col-md-6 col-sm-6">
+
+                 <form role="form" id="ajax-contacts">   
+                     <div class="form-group">
+
+                        <fieldset class="col-md-6 col-sm-6" >
+                            <div class="form-group">
+                            <label class="control-label" for="name">Nombre</label>
+                            <input id="name" class="form-control input-sm" type="text" name="name" maxlength="80" placeholder="Escriba su nombre">
+                            <span  class="help-block" style="display: none;">Por favor ingrese su nombre.</span>
+                            </div>
+                        </fieldset>
+                        <fieldset class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                            <label class="control-label" for="email">Correo</label>
+                             <input type="email" class="form-control input-sm" name="email" id="email" placeholder="Escriba su Correo">
+                             <span class="help-block" style="display: none;">Por favor ingrese un correo valido.</span>
+                             </div>
+                        </fieldset>
+                        <fieldset class="col-md-12">
+                            <div class="form-group">
+                            <label class="control-label" for="subject">Asunto</label>
+                            <input type="text" class="form-control input-sm" name="subject" id="subject" maxlength="80" placeholder="Escriba un Asunto">
+                            <span class="help-block" style="display: none;">Por favor ingrese un asunto.</span>
+                             </div>
+                        </fieldset>
+                        <fieldset class="col-md-12">
+                            <div class="form-group">
+                            <label class="control-label" for="comments">Mensaje</label>
+                            <textarea name="message" class="form-control input-sm" rows="4"  id="message"  maxlength="700" placeholder="Escriba su Mensaje"></textarea>
+                            <span class="help-block" style="display: none;">Por favor ingrese un mensaje.</span>
+                            </div>
+                        </fieldset>
+                        <fieldset class="col-md-12">
+                            <input type="submit" name="send" value="Enviar Mensaje" id="submit" class="btn btn-lg btn-success" >
+                        </fieldset>
+
+                    </div> <!-- /.contact-form -->
+
+                </form>
+                </div> <!-- /.col-md-6 --> </div> <!-- /.col-md-6 -->
+               
+
+
+
+
 	</div>
 </div>
 
 
-</div>
+
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="text-center">
+
+
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-3">
+                        <h3>Dirección</h3>
+                        <p>San Jose , Costa Rica
+                            <br>Del segundo Palí de Pavas 300mts norte
+                            <br>edificio esquinero dos plantas, mano derecha.</p>
+                    </div>
+                    <div class="footer-col col-md-3">
+                        <h3>Redes Sociales</h3>
+
+                        <ul class="list-inline">
+                            <li><a href="https://www.facebook.com/papesacr" class="btn-social btn-outline"><i class="fa fa-facebook-square fa-2x"></i></a>
+                                <p>PAPESA</p>
+                            </li>
+                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-facebook-square fa-2x"></i></a>
+                                <p>SCRAPPING</p>
+                            </li>
+                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-facebook-square fa-2x"></i></i></a>
+                                <p>BODAS</p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-3">
+                        <h3>Correo </h3>
+                        <p>Correo :  info@papesa.co.cr
+                        </br>Correo :  ventas@papesa.co.cr </p>
+                    </div>
+
+                    <div class="footer-col col-md-3">
+                        <h3>Telefono</h3>
+                        <p>Teléfono:  2290-6263 
+                            </br>Fax:  2220-4228</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; 2014 - Papeles Seleccionados S.A
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
 
 
@@ -385,6 +526,13 @@
 	<script src="js/jquery.prettyPhoto-3.1.4-W3C.js" type="text/javascript"></script> 
 	<script type="text/javascript" src="js/jquery.inview.js"></script>
 
+
+	<!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
 
 </body>
