@@ -63,7 +63,7 @@ function initialize() {
             '<p><strong>Ubicacion</strong><br>'+
             'Del segundo Palí de Pavas 300mts norte<br>' +
             'edificio esquinero dos plantas, mano derecha<br>'+
-            'Teléfono:  2290-6263</p>'+
+            '</p>'+
             '</div>';
  
         var var_infowindow = new google.maps.InfoWindow({
