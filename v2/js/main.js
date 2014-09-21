@@ -73,7 +73,7 @@ function initialize() {
     var var_marker = new google.maps.Marker({
             position: var_location,
             map: var_map,
-            title:"Click on marker to see info",
+            title:"Click para ver mas información",
                   maxWidth: 500
                   });
 

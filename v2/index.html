@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -18,10 +22,13 @@
     
     <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.0/animate.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
 
   <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
   <![endif]-->
 
 
@@ -41,11 +48,14 @@
 	
 	
 </head>
+ <!--[if lt IE 8]>
+            <p class="browsehappy">Estas utilizando un navegador <strong>obsoleto</strong> . Por Favor <a href="http://browsehappy.com/">actualiza el navegador</a> para mejorar la navegación web.</p>
+        <![endif]-->
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
+	
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-
+			
 				<div class="navbar-header page-scroll">
 					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 					  <span class="sr-only">Toggle navigation</span>
@@ -57,7 +67,7 @@
 					<a class="navbar-brand page-scroll" href="#page-top">TIENDAS</a>
 				</div>
 				
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
 					<ul class="nav navbar-nav">
 						<li class="hidden">
                         <a class="page-scroll" href="#page-top"></a>
@@ -348,9 +358,8 @@
 
 <div  class="container">
 
-
-	<div class="row clearfix">
-		<div class="col-md-12 column">
+<div class="row clearfix">
+		<div class="col-md-12 ">
 			<div class="page-header">
 				<h1 class="section-titleVarios">
 					CONTACTENOS
@@ -360,63 +369,52 @@
 	</div>
 	</div>
 
-<div id="contact_form" class="row">
+<div class="col-md-6 " >
 
-	<div class="col-md-6 col-sm-6">
-      <div id="map">
-     </div>
-	 </div> 
-
+      <div id="map"> </div>
+</div>      
+	 
+<div class="col-md-6  " >
 	
-                <div class="col-md-6 col-sm-6">
-
-                 <form role="form" id="ajax-contacts">   
-                     <div class="form-group">
-
-                        <fieldset class="col-md-6 col-sm-6" >
-                            <div class="form-group">
-                            <label class="control-label" for="name">Nombre</label>
-                            <input id="name" class="form-control input-sm" type="text" name="name" maxlength="80" placeholder="Escriba su nombre">
-                            <span  class="help-block" style="display: none;">Por favor ingrese su nombre.</span>
-                            </div>
-                        </fieldset>
-                        <fieldset class="col-md-6 col-sm-6">
-                            <div class="form-group">
-                            <label class="control-label" for="email">Correo</label>
-                             <input type="email" class="form-control input-sm" name="email" id="email" placeholder="Escriba su Correo">
-                             <span class="help-block" style="display: none;">Por favor ingrese un correo valido.</span>
-                             </div>
-                        </fieldset>
-                        <fieldset class="col-md-12">
-                            <div class="form-group">
-                            <label class="control-label" for="subject">Asunto</label>
-                            <input type="text" class="form-control input-sm" name="subject" id="subject" maxlength="80" placeholder="Escriba un Asunto">
-                            <span class="help-block" style="display: none;">Por favor ingrese un asunto.</span>
-                             </div>
-                        </fieldset>
-                        <fieldset class="col-md-12">
-                            <div class="form-group">
-                            <label class="control-label" for="comments">Mensaje</label>
-                            <textarea name="message" class="form-control input-sm" rows="4"  id="message"  maxlength="700" placeholder="Escriba su Mensaje"></textarea>
-                            <span class="help-block" style="display: none;">Por favor ingrese un mensaje.</span>
-                            </div>
-                        </fieldset>
-                        <fieldset class="col-md-12">
-                            <input type="submit" name="send" value="Enviar Mensaje" id="submit" class="btn btn-lg btn-success" >
-                        </fieldset>
-
-                    </div> <!-- /.contact-form -->
-
-                </form>
-                </div> <!-- /.col-md-6 --> </div> <!-- /.col-md-6 -->
-               
+ <form name="sentMessage" class="well" id="contactForm"  novalidate>
+	       
+		 <div class="control-group">
+                    <div class="controls">
+                    	<label class="control-label" for="name">Nombre</label>
+			<input type="text" class="form-control" 
+			   	   placeholder="Escriba su nombre" id="name" required
+			           data-validation-required-message="Por favor ingrese su nombre" />
+			  <p class="help-block"></p>
+		   </div>
+	         </div> 	
+                <div class="control-group">
+                  <div class="controls">
+                  	<label class="control-label" for="email">Correo</label>
+			<input type="email" class="form-control" placeholder="Escriba su Correo" 
+			   	            id="email" required
+			   		   data-validation-required-message="Por favor ingrese su direccion de correo" />
+		</div>
+	    </div> 	
+			  
+               <div class="control-group">
+                 <div class="controls">
+                 	<label class="control-label" for="comments">Mensaje</label>
+				 <textarea rows="6" cols="100" class="form-control" 
+                       placeholder="Escriba su Mensaje" id="message" required
+		       data-validation-required-message="Por favor ingrese su mensaje" minlength="5" 
+                       data-validation-minlength-message="Min 5 characters" 
+                        maxlength="500" style="resize:none"></textarea>
+		</div>
+               </div> 		 
+	     <div id="success"> </div> <!-- For success/fail messages -->
+	    <button type="submit" class="btn btn-primary pull-right">Enviar</button><br />
+          </form>
 
 
-
-
-	</div>
 </div>
 
+
+</div>
 
 
 </section>
@@ -516,8 +514,7 @@
 
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/bootstrap.min.js"><\/script>')</script>
-	
-	<script type="text/javascript" src="js/scripts.js"></script>
+
 
 
 	<link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.0/animate.min.css" rel="stylesheet">
@@ -532,6 +529,9 @@
 
      <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+    <script src="./js/jqBootstrapValidation.js"></script>
+ <script src="./js/contact_me.js"></script>
 
 
 </body>
