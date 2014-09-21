@@ -109,10 +109,11 @@ h1.section-title{
 }
 
 #fbico {
-    color: #3B5998;
-    text-shadow: 1px 1px 1px #ccc;
-    font-size: 1.5em;
+    color: #428bca;
+ 
+    font-size: 2em;
 }
+
 
 
 
@@ -165,15 +166,28 @@ h1.section-title{
   
     padding-top: 50px;
    
-      color: #fff;
+      color: #fbfbfb;
     background: #2c3e50;
 }
 
 
-#map {
-  width: 100%;
-  height: 290px;
 
+
+
+#map {
+display: block;
+height: 250px;
+width: 100%;
+min-width: 100%;
+max-width: 1350px;
+margin-left: auto;
+margin-right: auto;
+margin-top:20px;
+-webkit-box-shadow: 0px 0px 30px rgba(50, 50, 50, 0.52) inset;
+-moz-box-shadow:    0px 0px 30px rgba(50, 50, 50, 0.52)inset;
+box-shadow:         0px 0px 30px rgba(50, 50, 50, 0.52)inset;
+border-top: 4px solid #2fe2bf;
+color :#2c3e50;
 }
 
 .columna{
@@ -193,8 +207,8 @@ h1.section-title{
 label {
 display: inline-block;
 margin-bottom: 5px;
-font-weight: bold;
 color: #2c3e50;
+font-size: 1em;
 }
 
 
@@ -222,7 +236,7 @@ color: #2c3e50;
 
 
 footer .footer-below {
-    padding: 25px 0;
+    padding: 5px 0;
    background: url(../img/bg.gif);/*#f5f5f5 *//*f1f7fe*/;
 }
 
@@ -230,3 +244,24 @@ footer .footer-above {
     padding-top: 30px;
     background: url(../img/bg.gif);/*#f5f5f5 *//*f1f7fe*/;
 }
+
+
+
+/***************************** SOCIAL BUTTONS ******************************/ 
+  ul.social-top {
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 1px;
+    padding: 0px;
+    padding-left: 0px;
+    list-style-type: none;
+    
+  }
+
+  .social-top a{
+      color: #FBFBFB;
+       padding-left:0px;
+  margin-left:0px;
+  }
+ 
+

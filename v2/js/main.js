@@ -52,6 +52,8 @@ function initialize() {
      var var_mapoptions = {
           center: var_location,
            scrollwheel: false,
+           mapTypeControl: true,
+           scaleControl: true,
           zoom: 15
 
         };
