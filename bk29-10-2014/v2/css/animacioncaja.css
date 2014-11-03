@@ -1,0 +1,167 @@
+
+  
+  
+/************************************** CUSTOM STYLES *************************/
+
+.feature-box {
+  background-color: #ecf0f5;
+  border-radius: 6px;
+  padding: 14px;
+  position: relative;
+  text-align: center; }
+  .feature-box.feature-box-hot:before {
+    background: url("../../images/feature-box/ribbon.png") 0 0 no-repeat;
+    background-size: 82px 82px;
+    content: "";
+    height: 82px;
+    position: absolute;
+    right: -4px;
+    top: -4px;
+    width: 82px; }
+
+
+.feature-box-image {
+   margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 150px;
+  height: 170px;
+  display: block; }
+
+.feature-box-title {
+  font-size: 20px;
+  margin: 0; }
+  
+  .box, .feature-box{
+    margin-bottom:30px;
+    
+  }
+  
+   .feature-box h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+  .feature-box{
+
+  }
+  
+
+
+  .feature-box p{
+    text-align:center;
+  }
+  
+
+
+
+/****************************** FEATURES ***************************************/
+
+  #features-section{
+        border-top: 4px solid #2fe2bf;
+        min-height:550px;
+        position:relative;
+        overflow:hidden;
+        color:#333;
+        
+  }
+  
+  .feature-box:hover{
+    -webkit-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px 0px 10px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 0px 10px rgba(50, 50, 50, 0.5);
+  }
+    
+     .panel{
+      margin-top:0px; 
+    margin-bottom:-50px; 
+    padding-bottom:10px;
+    padding-top:10px;
+    padding-right:0px;
+    padding-left:0px;
+    border:0px;
+    width:100%;
+    max-width:100%;
+    
+
+      }
+      
+      .panel.first{
+        margin-top:-50px; 
+        background: url(../images/NuestrosServiciobarra.png);/*#f5f5f5 *//*f1f7fe*/; 
+
+      }
+      
+      .panel.nobg{
+        background:none;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;      
+      }
+      
+      .panel span{
+
+        text-shadow:none;
+        font-size:40px;
+        font-weight:400;
+        width:100%;
+        display:inline-block;
+        text-transform:uppercase;
+        line-height:42px;
+        
+      }
+      
+      .panel span .inner{
+
+        text-shadow:none;
+        font-size:26px;
+        font-weight:300;
+        width:100%;
+        display:inline-block;
+        color:#2b2b2b;
+        text-transform:none;
+      }
+  
+  .features-more{
+    padding:60px 0px 150px;
+
+  }
+  .features-more:first-child{
+    border-top:none;
+    
+  }
+  
+  .features-more h3{
+    font-size:26px;
+    color:#2b2b2b;
+  }
+  
+  .features-more{
+    background: url(../../assets/img/shadright.png) bottom right no-repeat;
+    
+  }
+  
+  .features-more:nth-child(even){
+    background: url(../../assets/img/shadleft.png) bottom left no-repeat;
+    
+  }
+  .features-more:nth-child(odd).span6{
+    background: url(../../assets/img/shadright.png) bottom right no-repeat;
+    
+    
+  }
+  
+  .features-more:nth-child(odd) h3{
+    text-align:right;
+  }
+  
+  .lead {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    }
+
+
+
+
